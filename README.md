@@ -7,7 +7,7 @@ All sensitive information inside this repo has been removed beforehand.
 
 ### Prepare Keycloak
 
-1. Start the Keycloak. Open ``docker-dev`` and run ``docker compose up`` (to destroy the infrastructure later: Abort with ``Ctrl+C`` and run ``docker compose down``=
+1. Start the Keycloak. Open ``docker-dev`` and run ``docker compose up`` (to destroy the infrastructure later: Abort with ``Ctrl+C`` and run ``docker compose down``
 2. Open http://localhost:8899/
 3. Login using the user ``admin`` and the password ``admin``
 4. Open http://localhost:8899/admin/master/console/#/wim/clients/915c2aa9-9447-469c-a5c6-6a222e217d2f/settings to see all settings of the ``quarkus`` client inside the ``wim`` realm
