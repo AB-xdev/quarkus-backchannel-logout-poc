@@ -14,7 +14,7 @@ All sensitive information inside this repo has been removed beforehand.
 5. Open http://localhost:8899/admin/master/console/#/wim/clients/915c2aa9-9447-469c-a5c6-6a222e217d2f/sessions to get a look over all active sessions for the client
 6. Leave this window open
 
-### 1. Showacsing the incorrect routing and getting any feedback from Quarkus
+### 1. Showcasing the incorrect routing and getting any feedback from Quarkus
 
 Setup:
 * [application.properties](./backend-rest/src/main/resources/application.properties): ``quarkus.oidc.wim.logout.backchannel.path`` is set to ``/oidc/wim/back-channel-logout``
