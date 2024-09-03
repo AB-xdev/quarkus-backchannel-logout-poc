@@ -1,0 +1,17 @@
+services:
+  keycloak-wim:
+    image: quay.io/keycloak/keycloak:25.0
+    restart: unless-stopped
+    command: start-dev --import-realm
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+    networks:
+      - backend-net
+    ports:
+      - "8899:8080"
+    volumes:
+      - ./realm-import:/opt/keycloak/data/import
+
+networks:
+  backend-net:
