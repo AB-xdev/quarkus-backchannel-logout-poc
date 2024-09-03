@@ -32,6 +32,7 @@ Setup:
 2024-09-03 15:46:30,252 DEBUG [io.qua.oid.run.BackChannelLogoutHandler] (vert.x-eventloop-thread-3) Back channel logout request for the tenant wim received
 2024-09-03 15:46:30,253 ERROR [io.qua.oid.run.BackChannelLogoutHandler] (vert.x-eventloop-thread-3) Tenant configuration for the tenant wim is not available or does not match the backchannel logout path
 ```
+❌ No logout happens
 
 ### 2. Showcasing how it should be configured
 
@@ -39,7 +40,8 @@ Change the following:
 1. ``backchannel.logout.url`` inside keycloak should be: ``http://host.docker.internal:8080/backend/oidc/wim/back-channel-logout``
   * You can change this in the UI at http://localhost:8899/admin/master/console/#/wim/clients/915c2aa9-9447-469c-a5c6-6a222e217d2f/settings
   * Then click "Save"
-2. Do the same as above inside "1. Showacsing the incorrect routing..."
+2. Do the same as above inside "1. Showcasing the incorrect routing..."
 
 ❌ Notice how this time there is no log output at all
 ❌ The request is still received by Quarkus (e.g. Breakpoint inside ``RouterImpl#handleContext`` triggers) but not processed
+❌ No logout happens
