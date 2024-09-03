@@ -41,6 +41,7 @@ Change the following:
   * You can change this in the UI at http://localhost:8899/admin/master/console/#/wim/clients/915c2aa9-9447-469c-a5c6-6a222e217d2f/settings
   * Then click "Save"
 2. Do the same as above inside "1. Showcasing the incorrect routing..."
+  * Make sure that you are inside a **new private tab** and the old one was closed beforehand so that you have no left-overs
 
 ❌ Notice how this time there is no log output at all
 ❌ The request is still received by Quarkus (e.g. Breakpoint inside ``RouterImpl#handleContext`` triggers) but not processed
