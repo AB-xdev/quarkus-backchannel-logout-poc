@@ -20,7 +20,7 @@ Setup:
 * [application.properties](./backend-rest/src/main/resources/application.properties): ``quarkus.oidc.wim.logout.backchannel.path`` is set to ``/oidc/wim/back-channel-logout``
 * [win-realm.json](./docker-dev/realm-import/win-realm.json): ``backchannel.logout.url`` is set to ``http://host.docker.internal:8080/backend/backend/oidc/wim/back-channel-logout`` (contains ``backend`` twice!)
 
-1. Start Quarkus inside ``backend-dev``. You can use the pre-definied IntelliJ IDEA Launcher called ``Run Backend (dev)``
+1. Start Quarkus inside ``backend-rest``. You can use the pre-definied IntelliJ IDEA Launcher called ``Run Backend (dev)``
 2. Inside a **new private tab** open http://localhost:8080/backend/v1/auth/wim/callback
 3. You will get redirect to keycloak. Login using the user ``test`` and the password ``test``
 4. You should be redirected, the site says ``YOU_ARE_LOGGED_IN``
