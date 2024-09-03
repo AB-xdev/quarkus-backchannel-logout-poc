@@ -1,4 +1,4 @@
-# Quarkus Backchannel Logout Tenant Bug PoC
+# Quarkus Backchannel Logout Bug PoC
 
 This is a minimalistic PoC of a project. 
 All sensitive information inside this repo has been removed beforehand.
