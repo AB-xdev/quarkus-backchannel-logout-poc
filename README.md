@@ -44,5 +44,7 @@ Change the following:
   * Make sure that you are inside a **new private tab** and the old one was closed beforehand so that you have no left-overs
 
 ❌ Notice how this time there is no log output at all
+
 ❌ The request is still received by Quarkus (e.g. Breakpoint inside ``RouterImpl#handleContext`` triggers) but not processed
+
 ❌ No logout happens
