@@ -1,3 +1,6 @@
+> [!NOTE]
+> This was fixed in [Quarkus 3.14.3](https://github.com/quarkusio/quarkus/issues/42990)
+
 # Quarkus Backchannel Logout Bug PoC
 
 This is a minimalistic PoC of a project. 
